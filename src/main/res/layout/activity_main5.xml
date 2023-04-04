@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity5">
+
+    <TableLayout
+        android:layout_width="339dp"
+        android:layout_height="651dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11. Please check off which of the following ethnic groups your biological (blood) parents (MOTHER OR FATHER) belong to:"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/RadioGroupAct5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbwhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="White (Caucasian)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbabo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aboriginal"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbblack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Black (Afro-Caribbean)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbeastasian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="East Asian (Chinese, Vietnamese, Filipino, Korean, etc.)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbsouthasian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="South Asian (East Indian, Pakistani, Sri Lankan, etc.)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other non-white (Latin American, Arab, West Asian)"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12. What is the highest level of education that you have completed?"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/RadioGroupAct5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbhighsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Some high school or less"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbscdiploma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High school diploma"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbcoluniv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Some college or university"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbcoldeg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="University or college degree"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonresultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

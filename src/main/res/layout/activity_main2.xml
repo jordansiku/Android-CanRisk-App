@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity2">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="323dp"
+        android:layout_height="635dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="BMI CALCULATOR"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Weight(Kg)"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Height(CM)"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="320dp"
+            android:layout_height="18dp" >
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate BMI" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THIS IS JUST FOR HAVING SPACE"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.Select your BMI group from the following choices:"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/RadioGroupAct2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="White (BMI less than 25)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/radioButton29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Light grey (BMI 25 to 29)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/radioButton34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dark grey (BMI 30 to 34)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Black (BMI 35 and over)"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonnext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

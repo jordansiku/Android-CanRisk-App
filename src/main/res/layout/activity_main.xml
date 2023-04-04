@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CanRisk App"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/buttonnext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:layout_width="377dp"
+        android:layout_height="594dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Select your age group:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioGroup
+                android:id="@+id/RadioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb4045"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="40-44 years"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rb4554"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="45-54 years"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rb5564"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="55-64 years"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rb6574"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="65-74 years"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THIS IS JUST FOR HAVING SPACE"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Are you male or female?"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioGroup
+                android:id="@+id/RadioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbmale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rbfemele"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Femele"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
